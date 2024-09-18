@@ -1,114 +1,199 @@
-
 //----------------------------------------------------------------------//
 // GLOBALS
 //----------------------------------------------------------------------//
+// Set list of properties
+const landuse = ['Cropland','Permanent meadows and pastures',
+  'Forest land','Other land', 'Farm buildings and Farmyards','Unaccounted']
+const items = ['Rice', 'Cattle and Buffaloes', 'Soya beans', 'Cocoa beans',
+  'Coffee, green', 'Oil palm fruit', 'Green corn/Maize']
 // Set list of colors for map
 const colors = ['fbc127','f57d15','d44843','9f2a63','65156e','280b54']
-// Set URL to estract geojson
-const geojson = 'static/data/iucn/iucn_points.geojson';
+//----------------------------------------------------------------------//
+// MAP GLOBALS
+//----------------------------------------------------------------------//
 // Set initial zoom
-const initZoom = 4;
+const initZoom = 2;
+const bounds = new L.LatLngBounds(new L.LatLng(-90,-360), new L.LatLng(90,360));
+// Set Tiles
+const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  minZoom: 2,
+  attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+const gray = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+  minZoom: 2,
+  maxZoom: 16
+});
+const terrain = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
+  minZoom: 2,
+  maxZoom: 13
+});
+// Create our map, giving it the streetmap and earthquakes layers to display on load.
+let map = L.map("map", {
+  center: [37, 0],
+  zoom: initZoom,
+  maxBounds: bounds,
+  maxBoundsViscosity: 1.0
+});
+// Create a baseMaps object.
+const baseMaps = {
+  "Minimal Map": gray,
+  "Terrain Map": terrain,
+  "Satelite Map" : satellite,
+}
+// Set base layer control to map
+L.control.layers(baseMaps).addTo(map);
 //----------------------------------------------------------------------//
 // FETCH DATA THEN RUN APP
 //----------------------------------------------------------------------//
 // Get the data with d3.
-d3.json(geojson).then(function(data) {
-  console.log(data);
-  // let dL = JSON.parse(JSON.stringify(data.features));
-  // let dR = JSON.parse(JSON.stringify(data.features));
-  // dL.forEach(f => f.geometry.coordinates[0]+=360);
-  // dR.forEach(f => f.geometry.coordinates[0]-=360);
-  // let bioFeatures = data.features.concat(dL,dR).sort((x,y)=>d3.ascending(y.properties.event_year,x.properties.event_year));
-  createMap(data.features);
-});
 
-//----------------------------------------------------------------------//
-// FUNCTIONS
-//----------------------------------------------------------------------//
 
-//----------------------------------------------------------------------//
-// Create map
-function createMap(features) {
-  let bounds = new L.LatLngBounds(new L.LatLng(-90, -360), new L.LatLng(90, 360));
-  let satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    minZoom: 2,
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-  });
-  var street = L.tileLayer('https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
-    attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    minZoom: 2,
-    maxZoom: 22,
-    accessToken: ' m5Y4FMaF1cDbNvJ2BRVZfIW68vIcw3Ve3nM9d28vh1uSeckwb0QriuvQ5hsAnSLT'
-  });
-  var gray = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-    minZoom: 2,
-    maxZoom: 16
-  });
-  var terrain = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
-    minZoom: 2,
-    maxZoom: 13
-  });
-
-  let baseMaps = {
-    "Street Map": street,
-    "Minimal Map": gray,
-    "Terrain Map": terrain,
-    "Satelite Map": satellite,
-  };
-
-  let overlayMaps = {
-    "Endangered": species,
-  };
-
-  let myMap = L.map("map", {
-    center: [37.09, -95.71],
-    zoom: initZoom,
-    layers: [gray, species],
-    maxBounds: bounds,
-    maxBoundsViscosity: 1.0
-  });
-
-  let heatArray=[]
-  features.forEach(feature => {if (feature.geometry) heatArray.push([feature.geometry.coordinates[1], feature.geometry.coordinates[0]]);})
-
-  let heat = L.heatLayer(heatArray, {
-    radius: 20,
-    blur: 35
-  }).addTo(myMap);
-
-  // Create a layer control, pass it our baseMaps and overlayMaps,
-  // then add the layer control to the map.
-  L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(myMap);
-
-  // Send map to createLegend function
-  createLegend(myMap);
-}
-
-//----------------------------------------------------------------------//
-// Create legend
-function createLegend(map) {
-  let legend = L.control({ position: "bottomright" });
-  legend.onAdd = function() {
-    let div = L.DomUtil.create("div", "legend leaflet-control-layers leaflet-control-layers-expanded");
-    let range = ['Extant (resident)','Extant & Vagrant (resident)','Possibly Extant (resident)','Possibly Extinct','Possibly Extinct & Vagrant'];
-    div.innerHTML = '<b>Legend</b><br>'
-    // Loop through the ranges and generate a label with a colored square for each interval
-    for (let i = 0; i < range.length; i++) {
-      div.innerHTML += `<i style="background-color:#${colors[i]};"></i>${range[i]} `
-          + (range[i+1] ? '<br>' : '');
+  let world = L.choropleth(data , {
+    // Define which property in the features to use.
+    valueProperty:'landuse[2].values[-1]',
+    // Set the color scale.
+    scale: ['#fff','#444'],
+    // The number of breaks in the step range
+    steps: 12,
+    // q for quartile, e for equidistant, k for k-means
+    mode: 'q',
+    style: {
+      color:'#fff',
+      weight:1,
+      fillOpacity:1
+    },
+    // Binding a popup to each layer
+    onEachFeature: function(feature,layer) {
+      layer.bindPopup('<strong>'+feature.properties.name+':</strong> '+feature.properties.landarea+'1000 ha')
     }
-    return div;
+  }).addTo(map);
+
+
+
+// control that shows state info on hover
+var info = L.control();
+
+info.onAdd = function(map) {
+  this._div = L.DomUtil.create("div", "info");
+  this.update();
+  return this._div;
+};
+
+info.update = function(props) {
+  this._div.innerHTML =
+    "<h4>US Population Density</h4>" +
+    (props
+      ? "<b>" +
+        props.name +
+        "</b><br />" +
+        props.density +
+        " people / mi<sup>2</sup>"
+      : "Hover over a state");
+};
+
+info.addTo(map);
+
+// get color depending on population density value
+function getColor(d) {
+  return d > 1000
+    ? "#800026"
+    : d > 500
+      ? "#BD0026"
+      : d > 200
+        ? "#E31A1C"
+        : d > 100
+          ? "#FC4E2A"
+          : d > 50
+            ? "#FD8D3C"
+            : d > 20 ? "#FEB24C" : d > 10 ? "#FED976" : "#FFEDA0";
+}
+
+function style(feature) {
+  return {
+    weight: 2,
+    opacity: 1,
+    color: "white",
+    dashArray: "3",
+    fillOpacity: 0.7,
+    fillColor: getColor(feature.properties.density)
   };
-  // Adding the legend to the map
-  legend.addTo(map);
 }
-//----------------------------------------------------------------------//
-// function to calculate radius
-function calculateRadius(year, zoom) {
-  const transformedYear = Math.sqrt(year);
-  if (zoom>10) return 2**(zoom-11)*transformedYear;
-  if (zoom>initZoom) return transformedYear;
-  return 2**(zoom-initZoom)*transformedYear;
+
+function highlightFeature(e) {
+  var layer = e.target;
+
+  layer.setStyle({
+    weight: 5,
+    color: "#666",
+    dashArray: "",
+    fillOpacity: 0.7
+  });
+
+  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+    layer.bringToFront();
+  }
+
+  info.update(layer.feature.properties);
 }
+
+var geojson;
+
+function resetHighlight(e) {
+  geojson.resetStyle(e.target);
+  info.update();
+}
+
+function zoomToFeature(e) {
+  map.fitBounds(e.target.getBounds());
+}
+
+function onEachFeature(feature, layer) {
+  layer.on({
+    mouseover: highlightFeature,
+    mouseout: resetHighlight,
+    click: zoomToFeature
+  });
+}
+let dL = JSON.parse(JSON.stringify(data.features));
+let dR = JSON.parse(JSON.stringify(data.features));
+dL.forEach(f => f.geometry.coordinates[0]+=360);
+dR.forEach(f => f.geometry.coordinates[0]-=360);
+let datafeatures = data.features.concat(dL,dR);
+geojson = L.geoJson(datafeatures, {
+  style: style,
+  onEachFeature: onEachFeature
+}).addTo(map);
+
+map.attributionControl.addAttribution(
+  'Population data &copy; <a href="http://census.gov/">US Census Bureau</a>'
+);
+
+var legend = L.control({ position: "bottomright" });
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "info legend"),
+    grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+    labels = [],
+    from,
+    to;
+
+  for (var i = 0; i < grades.length; i++) {
+    from = grades[i];
+    to = grades[i + 1];
+
+    labels.push(
+      '<i style="background:' +
+        getColor(from + 1) +
+        '"></i> ' +
+        from +
+        (to ? "&ndash;" + to : "+")
+    );
+  }
+
+  div.innerHTML = labels.join("<br>");
+  return div;
+};
+
+legend.addTo(map);

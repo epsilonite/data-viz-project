@@ -6,7 +6,7 @@
 #map {height:800px}
 body {padding:0; margin:0;}
 body,html {height:100%;}
-.leaflet-popup-content-wrapper{color:white;}
+.leaflet-popup-content-wrapper{color:#666;}
 .popup-fbc127 .leaflet-popup-content-wrapper, 
 .popup-fbc127 .leaflet-popup-tip {background-color: #fbc127;}
 .popup-f57d15 .leaflet-popup-content-wrapper, 
