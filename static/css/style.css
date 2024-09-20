@@ -1,22 +1,26 @@
-.container { font-family: "Open Sans", verdana, arial, sans-serif; }
-.card-title { margin-bottom: 0px; }
-#selDataset, #sample-metadata p { font-size: 14px; margin:0px; }
-#sample-metadata p span { font-size: 12px; }
-.bg-med { background-color:#888; color:white;}
-#map {height:800px}
 body {padding:0; margin:0;}
-body,html {height:100%;}
-.leaflet-popup-content-wrapper{color:#666;}
-.popup-fbc127 .leaflet-popup-content-wrapper, 
-.popup-fbc127 .leaflet-popup-tip {background-color: #fbc127;}
-.popup-f57d15 .leaflet-popup-content-wrapper, 
-.popup-f57d15 .leaflet-popup-tip {background-color: #f57d15;}
-.popup-d44843 .leaflet-popup-content-wrapper, 
-.popup-d44843 .leaflet-popup-tip {background-color: #d44843;}
-.popup-9f2a63 .leaflet-popup-content-wrapper, 
-.popup-9f2a63 .leaflet-popup-tip {background-color: #9f2a63;}
-.popup-65156e .leaflet-popup-content-wrapper, 
-.popup-65156e .leaflet-popup-tip {background-color: #65156e;}
-.popup-280b54 .leaflet-popup-content-wrapper, 
-.popup-280b54 .leaflet-popup-tip {background-color: #280b54;}
-i {width:18px; height:18px; float:left; margin-right:8px; opacity:1;}
+body,html {height:100%; font-family: Arial, Helvetica, sans-serif;}
+#yearSlider{width: 90%;padding: 5px;}
+#map {
+    height: 90%;
+    width: 100%;
+}
+#controls {
+    height: 10%;
+}
+#wrapper {margin: auto; padding: 20px;}
+select, input[type="range"] {
+    padding: 5px;
+}
+.legend {
+    background: white;
+    line-height: 1.5em;
+    padding: 10px;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    padding-right: 8px;
+    opacity: 0.7;
+}
