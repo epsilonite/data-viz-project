@@ -24,8 +24,6 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 
 ---
 <br>
-<br>
-<br>
 
 ## Data Engineering
 
