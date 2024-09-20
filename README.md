@@ -81,10 +81,36 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 ![tree](https://github.com/epsilonite/data-viz-project/blob/main/static/images/tree_cover_loss_animation_edited.gif)
 
+- The ecological impact of tropical deforestation is significant, primarily causing a drastic loss of species, disruption of ecosystem balance, and potential climate change due to the release of stored carbon dioxide.
+
+---
+
 ### Biodiversity Hotspots
 
+- A biodiversity hotspot is a region that is both rich in biodiversity (high species diversity and endemism) and under significant threat from human activities such as deforestation, habitat destruction, pollution, and climate change
+
+---
+
 ## Outcomes
+
+1. Loss of Biodiversity
+
+2. Increased Carbon Emissions
+
+3. Climate Change / Temperature Change
+
+
+---
+
 ## Mitigation
+
+
+1. Reforestation and Afforestation Programs.
+  - Examples: Brazil's Atlantic Forest Restoration Pact and the Bonn Challenge, a global effort to restore 350 million       hectares of deforested land by 2030. Also Canada’s Billion Trees Initiative.
+2. Establishment of Protected Areas and Key Biodiversity Areas (KBAs)
+  - Examples: The Amazon Region Protected Areas (ARPA) program in Brazil, which aims to protect large portions of the         Amazon Rainforest from deforestation.
+
+
 ## References
 [FAOSTAT (Food and Agriculture Organization of the United Nations)](https://www.fao.org/faostat/en/#data)<br>
 FAO. 2024. FAOSTAT: Food and Agriculture Organization of the United Nations. https://www.fao.org/faostat/en/#data.<br>
