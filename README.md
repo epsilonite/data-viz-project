@@ -50,9 +50,13 @@ Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, 
 ---
 
 ## Data Visualization
+
+### Topics
   - [Agriculture and Land Usage](#Agriculture-and-Land-Usage)
   - [Tree Loss and Deforestation](#Tree-Loss-and-Deforestation)
   - [Biodiversity Hotspots](#Biodiversity-Hotspots)
+
+---
 
 ### Agriculture and Land Usage
 
