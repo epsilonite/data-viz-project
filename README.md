@@ -50,8 +50,6 @@ Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, 
 
 ---
 <br>
-<br>
-<br>
 
 ## Data Visualization
 
@@ -95,8 +93,6 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 ---
 <br>
-<br>
-<br>
 
 ## Outcomes
 
@@ -109,8 +105,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 ---
 <br>
-<br>
-<br>
+
 ## Mitigation
 
 
@@ -121,8 +116,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 ---
 <br>
-<br>
-<br>
+
 ## References
 [FAOSTAT (Food and Agriculture Organization of the United Nations)](https://www.fao.org/faostat/en/#data)<br>
 FAO. 2024. FAOSTAT: Food and Agriculture Organization of the United Nations. https://www.fao.org/faostat/en/#data.<br>
