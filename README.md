@@ -145,7 +145,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 1. **Data Accuracy and Transparency**: Data was sourced from accurate, up-to-date, and reliable sources, such as government agencies, scientific studies, and reputable organizations. All data sources are clearly cited to ensure transparency and accountability.
 2. **Avoiding Bias**: Efforts were made to avoid any biased narrative. All visualizations are fact-driven, and data was cross-verified using multiple reputable sources to ensure accuracy and objectivity
-3. **Balanced Perspective**: A balanced view is portrayed by including important mitigation and conservation efforts, such as reforestation initiatives, the establishment of protected areas, and other sustainability measures. This helps present both the challenges and solutions.
+3. **Balanced Perspective**: A balanced view is portrayed by including important mitigation and conservation efforts, such as reforestation initiatives, the establishment of protected areas. This helps present both the challenges and solutions.
 4. **Comprehensive View**: To avoid a "single-story" narrative, global visualizations were created wherever possible, despite the complexity of handling large-scale data. This ensures a broader, more comprehensive understanding of the issues at hand.
 
 ---
