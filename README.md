@@ -26,6 +26,7 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 <br>
 <br>
 <br>
+
 ## Data Engineering
 
 Pandas, GeoPandas and sqlLite was used to process CSVs and JSONs
@@ -53,6 +54,7 @@ Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, 
 <br>
 <br>
 <br>
+
 ## Data Visualization
 
 ### Topics
@@ -97,6 +99,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 <br>
 <br>
 <br>
+
 ## Outcomes
 
 1. Loss of Biodiversity
