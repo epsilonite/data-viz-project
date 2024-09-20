@@ -43,8 +43,11 @@ Data Engineering for GeoJSON:
 - Pandas: .groupby().agg(list) to preserve data while grouping by country
 - Using nested dictionaries to preserve merged data for a given country
 
+![geojson](https://github.com/epsilonite/data-viz-project/blob/main/static/images/geojson_image.png)
+
 Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, GeoPandas, Plotly
 
+---
 
 ## Data Visualization
   - [Agriculture and Land Usage](#Agriculture-and-Land-Usage)
@@ -59,8 +62,21 @@ Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, 
   - Cropland is land used for cultivation of crops
   - Permanent meadows and pastures are defined as land used permanently (five years or more) to grow herbaceous forage       crops through cultivation or naturally (wild prairie or grazing land). 
 
-![land](
+![land](https://github.com/epsilonite/data-viz-project/blob/main/static/images/land_use_graph.png)
+
+- Visual of the global distribution of major crops such as rice, soya beans, cocoa beans, coffee, 
+palm oil, and maize, and the livestock crop of cattle and buffalo.
+- Crops are often grown in regions with high biodiversity, such as tropical rainforests, where deforestation is prevalent.
+
+---
+
 ### Tree Loss and Deforestation
+
+- From 2001 to 2023, there was a total of 488 Mha of tree cover loss globally, equivalent to a 12% decrease in tree cover since 2000.
+- According to Global Forest Watch, from 2001 to 2023, 22% of tree cover loss was linked to deforestation, which resulted in permanent loss of forests and conversion to non-forest land uses such as agriculture and human settlements.
+
+![tree](https://github.com/epsilonite/data-viz-project/blob/main/static/images/tree_cover_loss_animation_edited.gif)
+
 ### Biodiversity Hotspots
 
 ## Outcomes
