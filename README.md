@@ -1,7 +1,8 @@
 ### data-viz-project
 # Global Crop Distribution, Deforestation, and Biodiversity Hotspots
 Be, Ritu, Caitlin, Rajamani
-
+<br>
+<br>
 ## Project Focus
 Visualize the overlap between global agricultural crop distribution, deforestation rates, and biodiversity hotspots to understand the impact of agricultural expansion on biodiversity and forest loss.<br>
 
