@@ -53,11 +53,13 @@ Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, 
 
 ### Agriculture and Land Usage
 
-- Agriculture uses a significant amount of earth's land area. The largest proportion of this is used for pasture and meadow.
+- Agricultural land constitutes roughly 30% of the total land area on Earth.
+- The largest proportion of this is used for pasture and meadow.
 - FAO Definitions:
   - Cropland is land used for cultivation of crops
   - Permanent meadows and pastures are defined as land used permanently (five years or more) to grow herbaceous forage       crops through cultivation or naturally (wild prairie or grazing land). 
 
+![land](
 ### Tree Loss and Deforestation
 ### Biodiversity Hotspots
 
