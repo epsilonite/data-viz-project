@@ -1,9 +1,15 @@
 ### data-viz-project
-# Climate Change | Global Crop Distribution, Deforestation, and Biodiversity Hotspots
+# Global Crop Distribution, Deforestation, and Biodiversity Hotspots
+Be, Ritu, Caitlin, Rajamani
+
+### Project Focus
+---
 Visualize the overlap between global agricultural crop distribution, deforestation rates, and biodiversity hotspots to understand the impact of agricultural expansion on biodiversity and forest loss.<br>
+
 - **Identify High-Risk Areas:** Pinpoint regions where agricultural expansion is driving both deforestation and biodiversity loss, providing actionable insights for conservation efforts.<br>
 - **Understand Crop-Specific Impacts:** Analyze how specific crops are linked to deforestation and biodiversity loss, which can help guide sustainable agricultural practices and policies.<br>
 - **Temporal Changes:** Understand how the dynamics of deforestation and biodiversity loss have changed over time and how current trends might continue if no action is taken.
+- 
 ## Contents
 - [Instructions](#Instructions)
 - [Data Engineering](#Data-Engineering)
