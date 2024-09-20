@@ -22,16 +22,33 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - [Mitigation](#Mitigation)
 - [References](#References)
 
-## Instructions
+---
+<br>
 ## Data Engineering
+
+Pandas, GeoPandas and sqlLite was used to process CSVs and JSONs
+The preprocessing steps taken include: 
+- Parsing and extracting Data from json response
+- Removing extra headers and worksheets from the source data file
+- Creating a hashtable for country names across datasets
+- Limiting the date based on availability across various data sources 
+- Converting data types
+- Merging data from different sources
+Creating GeoJSON  to use for Javascript visualization
+SQL Databases: Individual sqlite databases for separate data sources and a master database
+
+
+
+
+
 ## Data Visualization
   - [Agriculture and Land Usage](#Agriculture-and-Land-Usage)
   - [Tree Loss and Deforestation](#Tree-Loss-and-Deforestation)
   - [Biodiversity Hotspots](#Biodiversity-Hotspots)
 
-## Agriculture and Land Usage
-## Tree Loss and Deforestation
-## Biodiversity Hotspots
+### Agriculture and Land Usage
+### Tree Loss and Deforestation
+### Biodiversity Hotspots
 
 ## Outcomes
 ## Mitigation
