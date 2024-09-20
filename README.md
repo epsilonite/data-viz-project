@@ -23,7 +23,6 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - [References](#References)
 
 ---
-<br>
 
 ## Data Engineering
 
@@ -39,6 +38,10 @@ The preprocessing steps taken include:
 Creating GeoJSON  to use for Javascript visualization
 SQL Databases: Individual sqlite databases for separate data sources and a master database
 
+Data Engineering for GeoJSON:
+- GeoPandas: .sjoin, .dissolve to bin points into polygons for choropleths
+- Pandas: .groupby().agg(list) to preserve data while grouping by country
+- Using nested dictionaries to preserve merged data for a given country
 
 
 
