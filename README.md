@@ -35,7 +35,7 @@ The preprocessing steps taken include:
 - Converting data types
 - Merging data from different sources
   
-Creating GeoJSON  to use for Javascript visualization
+Creating GeoJSON  to use for Javascript visualization<br>
 SQL Databases: Individual sqlite databases for separate data sources and a master database
 
 Data Engineering for GeoJSON:
@@ -43,7 +43,7 @@ Data Engineering for GeoJSON:
 - Pandas: .groupby().agg(list) to preserve data while grouping by country
 - Using nested dictionaries to preserve merged data for a given country
 
-
+Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, GeoPandas, Plotly
 
 
 ## Data Visualization
@@ -52,6 +52,12 @@ Data Engineering for GeoJSON:
   - [Biodiversity Hotspots](#Biodiversity-Hotspots)
 
 ### Agriculture and Land Usage
+
+- Agriculture uses a significant amount of earth's land area. The largest proportion of this is used for pasture and meadow.
+- FAO Definitions:
+  - Cropland is land used for cultivation of crops
+  - Permanent meadows and pastures are defined as land used permanently (five years or more) to grow herbaceous forage       crops through cultivation or naturally (wild prairie or grazing land). 
+
 ### Tree Loss and Deforestation
 ### Biodiversity Hotspots
 
