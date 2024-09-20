@@ -55,6 +55,7 @@ Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, 
 
 ![lan](https://github.com/epsilonite/data-viz-project/blob/main/static/images/lan_lib.png)
 
+Processes for cleaning raw data and jupyter notebooks for analysis and visualization are saved in /static/ directory. Cleaned data has been outputted to GeoJSON & csv; along with all Input Data are saved in different folders under /static/data/ directory. Javascripts are in /static/js/ directory, style sheet is in /static/css/ directory. Output images and html files are in /static/images/ directory.
 ---
 <br>
 
