@@ -24,6 +24,7 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 
 ---
 <br>
+
 ## Data Engineering
 
 Pandas, GeoPandas and sqlLite was used to process CSVs and JSONs
