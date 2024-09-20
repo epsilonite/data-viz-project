@@ -116,7 +116,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 ![carb](https://github.com/epsilonite/data-viz-project/blob/main/static/images/carbon_emissions.png)
 
-3. Climate Change / Temperature Change
+3. Climate Change / Temperature Change: Land surface temperature change of 1.5 degree C since 1860.
 
 [Temperature Change - Watch Video Here](https://github.com/epsilonite/data-viz-project/blob/main/static/images/temperature_anomaly_animation_with_midline.mp4)
 
