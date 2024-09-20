@@ -13,7 +13,6 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - **Temporal Changes:** Understand how the dynamics of deforestation and biodiversity loss have changed over time and how current trends might continue if no action is taken.
 
 
-[Dashboard](https://epsilonite.github.io/data-viz-project/)
 
 ---
 
@@ -23,6 +22,7 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - [Data Visualization](#Data-Visualization)
 - [Outcomes](#Outcomes)
 - [Mitigation](#Mitigation)
+- [Dashboard](https://epsilonite.github.io/data-viz-project/)
 - [References](#References)
 
 ---
