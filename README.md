@@ -141,7 +141,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 ---
 <br>
 
-## Ethical Considerations:
+## Ethical Considerations
 
 1. **Data Accuracy and Transparency**: Data was sourced from accurate, up-to-date, and reliable sources, such as government agencies, scientific studies, and reputable organizations. All data sources are clearly cited to ensure transparency and accountability.
 2. **Avoiding Bias**: Efforts were made to avoid any biased narrative. All visualizations are fact-driven, and data was cross-verified using multiple reputable sources to ensure accuracy and objectivity
