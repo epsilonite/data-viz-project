@@ -34,6 +34,7 @@ The preprocessing steps taken include:
 - Limiting the date based on availability across various data sources 
 - Converting data types
 - Merging data from different sources
+  
 Creating GeoJSON  to use for Javascript visualization
 SQL Databases: Individual sqlite databases for separate data sources and a master database
 
