@@ -23,7 +23,9 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - [References](#References)
 
 ---
-
+<br>
+<br>
+<br>
 ## Data Engineering
 
 Pandas, GeoPandas and sqlLite was used to process CSVs and JSONs
@@ -48,7 +50,9 @@ Data Engineering for GeoJSON:
 Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, GeoPandas, Plotly
 
 ---
-
+<br>
+<br>
+<br>
 ## Data Visualization
 
 ### Topics
@@ -90,7 +94,9 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 - A biodiversity hotspot is a region that is both rich in biodiversity (high species diversity and endemism) and under significant threat from human activities such as deforestation, habitat destruction, pollution, and climate change
 
 ---
-
+<br>
+<br>
+<br>
 ## Outcomes
 
 1. Loss of Biodiversity
@@ -101,7 +107,9 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 
 ---
-
+<br>
+<br>
+<br>
 ## Mitigation
 
 
@@ -110,7 +118,10 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 2. Establishment of Protected Areas and Key Biodiversity Areas (KBAs)
   - Examples: The Amazon Region Protected Areas (ARPA) program in Brazil, which aims to protect large portions of the         Amazon Rainforest from deforestation.
 
-
+---
+<br>
+<br>
+<br>
 ## References
 [FAOSTAT (Food and Agriculture Organization of the United Nations)](https://www.fao.org/faostat/en/#data)<br>
 FAO. 2024. FAOSTAT: Food and Agriculture Organization of the United Nations. https://www.fao.org/faostat/en/#data.<br>
