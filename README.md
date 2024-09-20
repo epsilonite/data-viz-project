@@ -11,15 +11,30 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - **Identify High-Risk Areas:** Pinpoint regions where agricultural expansion is driving both deforestation and biodiversity loss, providing actionable insights for conservation efforts.<br>
 - **Understand Crop-Specific Impacts:** Analyze how specific crops are linked to deforestation and biodiversity loss, which can help guide sustainable agricultural practices and policies.<br>
 - **Temporal Changes:** Understand how the dynamics of deforestation and biodiversity loss have changed over time and how current trends might continue if no action is taken.
-- 
+
+---
+
 ## Contents
-- [Instructions](#Instructions)
+
 - [Data Engineering](#Data-Engineering)
 - [Data Visualization](#Data-Visualization)
+- [Outcomes](#Outcomes)
+- [Mitigation](#Mitigation)
 - [References](#References)
+
 ## Instructions
 ## Data Engineering
 ## Data Visualization
+  - [Agriculture and Land Usage](#Agriculture-and-Land-Usage)
+  - [Tree Loss and Deforestation](#Tree-Loss-and-Deforestation)
+  - [Biodiversity Hotspots](#Biodiversity-Hotspots)
+
+## Agriculture and Land Usage
+## Tree Loss and Deforestation
+## Biodiversity Hotspots
+
+## Outcomes
+## Mitigation
 ## References
 [FAOSTAT (Food and Agriculture Organization of the United Nations)](https://www.fao.org/faostat/en/#data)<br>
 FAO. 2024. FAOSTAT: Food and Agriculture Organization of the United Nations. https://www.fao.org/faostat/en/#data.<br>
