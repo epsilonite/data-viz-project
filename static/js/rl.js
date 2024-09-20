@@ -1,10 +1,4 @@
-// Load the GeoJSON data
-colors = ["#ecc893","#e8b575","#e1a360","#d79155","#cb8050","#c26d43","#ba5938","#ae4633"]
-
-
 // Populate the item dropdown
-itemSelect = document.getElementById('itemSelect');
-itemSelect.innerHTML = '';
 landuse.forEach(type => {
     let option = document.createElement('option');
     option.value = type;
@@ -95,46 +89,24 @@ function updateMap() {
         });
 }
 
-// Function to get color based on value
-function getColor(value) {
-    return value > 70 ? colors[7] :
-           value > 60 ? colors[6] :
-           value > 50 ? colors[5] :
-           value > 40 ? colors[4] :
-           value > 30 ? colors[3] :
-           value > 20 ? colors[2] :
-           value > 10 ? colors[1] :
-           value > 0 ? colors[0] : '#FFF';
-}
-
-// Create the legend and place it in the bottom-right corner
-legend = L.control({ position: 'bottomright' });
+colors = ["#ecc893","#e8b575","#e1a360","#d79155","#cb8050","#c26d43","#ba5938","#ae4633"];
+bin = [0.1,10,20,30,40,50,60,70]
 
 legend.onAdd = function (map) {
     let div = L.DomUtil.create('div', 'legend');
-    let grades = [0.1,10,20,30,40,50,60,70];
-    let labels = [];
-
     div.innerHTML += '<h4>Landuse Percentages</h4>';
-    for (let i = 0; i < grades.length; i++) {
+    for (let i = 0; i < bin.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+            '<i style="background:' + getColor(bin[i] + 1) + '"></i> ' +
+            round(bin[i]) + (bin[i + 1] ? '&ndash;' + bin[i + 1] + '<br>' : '+');
     }
     return div;
 };
-
 legend.addTo(map);
-
-// Event listeners for dropdown and slider
-itemSelect.addEventListener('change', updateMap);
-yearSlider.addEventListener('input', updateMap);
 
 // Initial map load
 updateMap();
 
-
-function round(value, precision=0) {
-    var multiplier = Math.pow(10, precision);
-    return Math.round(value * multiplier) / multiplier;
-}
+// Add event listeners
+itemSelect.addEventListener('change', updateMap);
+yearSlider.addEventListener('input', updateMap);
