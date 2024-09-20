@@ -14,6 +14,8 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 
 ### [Presentation Link](https://docs.google.com/presentation/d/1qbUs_a21YbkwIR9OCFMQ2ObmhZDhrxyn/edit#slide=id.p1)
 
+### [Dashborad Link](https://epsilonite.github.io/data-viz-project/)
+
 ---
 
 ## Contents
@@ -116,7 +118,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 3. Climate Change / Temperature Change
 
-[Temperature Change](https://github.com/epsilonite/data-viz-project/blob/main/static/images/temperature_anomaly_animation_with_midline.mp4)
+[Temperature Change - Watch Video Here](https://github.com/epsilonite/data-viz-project/blob/main/static/images/temperature_anomaly_animation_with_midline.mp4)
 
 ---
 <br>
