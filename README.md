@@ -3,21 +3,120 @@
 Be, Ritu, Caitlin, Rajamani
 <br>
 <br>
+![crop_pic](https://github.com/epsilonite/data-viz-project/blob/main/static/images/read_me.avif)
+<br>
 ## Project Focus
 Visualize the overlap between global agricultural crop distribution, deforestation rates, and biodiversity hotspots to understand the impact of agricultural expansion on biodiversity and forest loss.<br>
 
 - **Identify High-Risk Areas:** Pinpoint regions where agricultural expansion is driving both deforestation and biodiversity loss, providing actionable insights for conservation efforts.<br>
 - **Understand Crop-Specific Impacts:** Analyze how specific crops are linked to deforestation and biodiversity loss, which can help guide sustainable agricultural practices and policies.<br>
 - **Temporal Changes:** Understand how the dynamics of deforestation and biodiversity loss have changed over time and how current trends might continue if no action is taken.
-- 
+
+---
+
 ## Contents
-- [Instructions](#Instructions)
+
 - [Data Engineering](#Data-Engineering)
 - [Data Visualization](#Data-Visualization)
+- [Outcomes](#Outcomes)
+- [Mitigation](#Mitigation)
 - [References](#References)
-## Instructions
+
+---
+<br>
+
 ## Data Engineering
+
+Pandas, GeoPandas and sqlLite was used to process CSVs and JSONs
+The preprocessing steps taken include: 
+- Parsing and extracting Data from json response
+- Removing extra headers and worksheets from the source data file
+- Creating a hashtable for country names across datasets
+- Limiting the date based on availability across various data sources 
+- Converting data types
+- Merging data from different sources
+  
+Creating GeoJSON  to use for Javascript visualization<br>
+SQL Databases: Individual sqlite databases for separate data sources and a master database
+
+Data Engineering for GeoJSON:
+- GeoPandas: .sjoin, .dissolve to bin points into polygons for choropleths
+- Pandas: .groupby().agg(list) to preserve data while grouping by country
+- Using nested dictionaries to preserve merged data for a given country
+
+![geojson](https://github.com/epsilonite/data-viz-project/blob/main/static/images/geojson_image.png)
+
+Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, GeoPandas, Plotly
+
+---
+<br>
+
 ## Data Visualization
+
+### Topics
+  - [Agriculture and Land Usage](#Agriculture-and-Land-Usage)
+  - [Tree Loss and Deforestation](#Tree-Loss-and-Deforestation)
+  - [Biodiversity Hotspots](#Biodiversity-Hotspots)
+
+---
+
+### Agriculture and Land Usage
+
+- Agricultural land constitutes roughly 30% of the total land area on Earth.
+- The largest proportion of this is used for pasture and meadow.
+- FAO Definitions:
+  - Cropland is land used for cultivation of crops
+  - Permanent meadows and pastures are defined as land used permanently (five years or more) to grow herbaceous forage       crops through cultivation or naturally (wild prairie or grazing land). 
+
+![land](https://github.com/epsilonite/data-viz-project/blob/main/static/images/land_use_graph.png)
+
+- Visual of the global distribution of major crops such as rice, soya beans, cocoa beans, coffee, 
+palm oil, and maize, and the livestock crop of cattle and buffalo.
+- Crops are often grown in regions with high biodiversity, such as tropical rainforests, where deforestation is prevalent.
+
+---
+
+### Tree Loss and Deforestation
+
+- From 2001 to 2023, there was a total of 488 Mha of tree cover loss globally, equivalent to a 12% decrease in tree cover since 2000.
+- According to Global Forest Watch, from 2001 to 2023, 22% of tree cover loss was linked to deforestation, which resulted in permanent loss of forests and conversion to non-forest land uses such as agriculture and human settlements.
+
+![tree](https://github.com/epsilonite/data-viz-project/blob/main/static/images/tree_cover_loss_animation_edited.gif)
+
+- The ecological impact of tropical deforestation is significant, primarily causing a drastic loss of species, disruption of ecosystem balance, and potential climate change due to the release of stored carbon dioxide.
+
+---
+
+### Biodiversity Hotspots
+
+- A biodiversity hotspot is a region that is both rich in biodiversity (high species diversity and endemism) and under significant threat from human activities such as deforestation, habitat destruction, pollution, and climate change
+
+---
+<br>
+
+## Outcomes
+
+1. Loss of Biodiversity
+
+2. Increased Carbon Emissions
+
+3. Climate Change / Temperature Change
+
+
+---
+<br>
+
+## Mitigation
+
+
+1. Reforestation and Afforestation Programs.
+  - Examples: Brazil's Atlantic Forest Restoration Pact and the Bonn Challenge, a global effort to restore 350 million       hectares of deforested land by 2030. Also Canada’s Billion Trees Initiative.
+2. Establishment of Protected Areas and Key Biodiversity Areas (KBAs)
+  - Examples: The Amazon Region Protected Areas (ARPA) program in Brazil, which aims to protect large portions of the         Amazon Rainforest from deforestation.
+
+---
+<br>
+
 ## References
 [FAOSTAT (Food and Agriculture Organization of the United Nations)](https://www.fao.org/faostat/en/#data)<br>
 FAO. 2024. FAOSTAT: Food and Agriculture Organization of the United Nations. https://www.fao.org/faostat/en/#data.<br>
