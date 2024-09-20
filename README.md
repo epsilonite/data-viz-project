@@ -116,7 +116,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 3. Climate Change / Temperature Change
 
-![Temperature Change](https://github.com/epsilonite/data-viz-project/blob/main/static/images/temperature_anomaly_animation_with_midline.mp4)
+[Temperature Change](https://github.com/epsilonite/data-viz-project/blob/main/static/images/temperature_anomaly_animation_with_midline.mp4)
 
 ---
 <br>
