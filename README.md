@@ -141,6 +141,16 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 ---
 <br>
 
+## Ethical Considerations:
+
+1. Data Accuracy and Transparency was maintained by obtaining data from accurate, up-to-date, reliable sources (e.g., government agencies, scientific studies, or reputable organizations). All Data Sources are mentioned clearly
+2. Any biased narrative was avoided, all data visualizations are fact driven and crossed verified from different sources
+3. Balance view is protrait along with important mitigation and conservation policies promoting reforestation, Protected Area Establishment etc.
+4. Avoiding a “single-story” narrative, in most cases worldwide visualization were created though data handling was too difficult. 
+
+---
+<br>
+
 ## References
 [FAOSTAT (Food and Agriculture Organization of the United Nations)](https://www.fao.org/faostat/en/#data)<br>
 FAO. 2024. FAOSTAT: Food and Agriculture Organization of the United Nations. https://www.fao.org/faostat/en/#data.<br>
