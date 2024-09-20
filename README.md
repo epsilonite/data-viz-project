@@ -97,6 +97,7 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 ### Biodiversity Hotspots
 
 - A biodiversity hotspot is a region that is both rich in biodiversity (high species diversity and endemism) and under significant threat from human activities such as deforestation, habitat destruction, pollution, and climate change
+- 36 biodiversity hotspots globally
 
 ![hot](https://github.com/epsilonite/data-viz-project/blob/main/static/images/hotspots.png)
 
