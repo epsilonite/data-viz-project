@@ -12,7 +12,7 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - **Understand Crop-Specific Impacts:** Analyze how specific crops are linked to deforestation and biodiversity loss, which can help guide sustainable agricultural practices and policies.<br>
 - **Temporal Changes:** Understand how the dynamics of deforestation and biodiversity loss have changed over time and how current trends might continue if no action is taken.
 
-### [Presentation Link](https://docs.google.com/presentation/d/1qbUs_a21YbkwIR9OCFMQ2ObmhZDhrxyn/edit#slide=id.p4)
+### [Presentation Link](https://docs.google.com/presentation/d/1qbUs_a21YbkwIR9OCFMQ2ObmhZDhrxyn/edit#slide=id.p1)
 
 ---
 
