@@ -12,6 +12,9 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - **Understand Crop-Specific Impacts:** Analyze how specific crops are linked to deforestation and biodiversity loss, which can help guide sustainable agricultural practices and policies.<br>
 - **Temporal Changes:** Understand how the dynamics of deforestation and biodiversity loss have changed over time and how current trends might continue if no action is taken.
 
+
+[Dashboard](https://epsilonite.github.io/data-viz-project/)
+
 ---
 
 ## Contents
@@ -48,6 +51,8 @@ Data Engineering for GeoJSON:
 
 Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, GeoPandas, Plotly
 
+![lan](https://github.com/epsilonite/data-viz-project/blob/main/static/images/lan_lib.png)
+
 ---
 <br>
 
@@ -70,7 +75,7 @@ Coding Languages and Libraries: Python, HTML, SQL, JavaScript, Folium, Leaflet, 
 
 ![land](https://github.com/epsilonite/data-viz-project/blob/main/static/images/land_use_graph.png)
 
-- Visual of the global distribution of major crops such as rice, soya beans, cocoa beans, coffee, 
+- Global distribution of major crops such as rice, soya beans, cocoa beans, coffee, 
 palm oil, and maize, and the livestock crop of cattle and buffalo.
 - Crops are often grown in regions with high biodiversity, such as tropical rainforests, where deforestation is prevalent.
 
@@ -85,11 +90,15 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 - The ecological impact of tropical deforestation is significant, primarily causing a drastic loss of species, disruption of ecosystem balance, and potential climate change due to the release of stored carbon dioxide.
 
+![df](https://github.com/epsilonite/data-viz-project/blob/main/static/images/deforest.png)
+
 ---
 
 ### Biodiversity Hotspots
 
 - A biodiversity hotspot is a region that is both rich in biodiversity (high species diversity and endemism) and under significant threat from human activities such as deforestation, habitat destruction, pollution, and climate change
+
+![hot](https://github.com/epsilonite/data-viz-project/blob/main/static/images/hotspots.png)
 
 ---
 <br>
@@ -98,7 +107,11 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 1. Loss of Biodiversity
 
+![loss](https://github.com/epsilonite/data-viz-project/blob/main/static/images/bio_loss.png)
+
 2. Increased Carbon Emissions
+
+![carb](https://github.com/epsilonite/data-viz-project/blob/main/static/images/carbon_emissions.png)
 
 3. Climate Change / Temperature Change
 
@@ -111,8 +124,13 @@ palm oil, and maize, and the livestock crop of cattle and buffalo.
 
 1. Reforestation and Afforestation Programs.
   - Examples: Brazil's Atlantic Forest Restoration Pact and the Bonn Challenge, a global effort to restore 350 million       hectares of deforested land by 2030. Also Canada’s Billion Trees Initiative.
+
+![forest](https://github.com/epsilonite/data-viz-project/blob/main/static/images/tree_gain.png)
+
 2. Establishment of Protected Areas and Key Biodiversity Areas (KBAs)
   - Examples: The Amazon Region Protected Areas (ARPA) program in Brazil, which aims to protect large portions of the         Amazon Rainforest from deforestation.
+
+![protect](https://github.com/epsilonite/data-viz-project/blob/main/static/images/protect.png)
 
 ---
 <br>
