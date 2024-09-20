@@ -2,6 +2,7 @@
 # Global Crop Distribution, Deforestation, and Biodiversity Hotspots
 Be, Ritu, Caitlin, Rajamani
 <br>
+<br>
 ![crop_pic](https://github.com/epsilonite/data-viz-project/blob/main/static/images/read_me.avif)
 <br>
 ## Project Focus
