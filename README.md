@@ -24,6 +24,7 @@ Visualize the overlap between global agricultural crop distribution, deforestati
 - [Data Visualization](#Data-Visualization)
 - [Outcomes](#Outcomes)
 - [Mitigation](#Mitigation)
+- [Ethical Considerations](#Ethical Considerations)
 - [Dashboard](https://epsilonite.github.io/data-viz-project/)
 - [References](#References)
 
